@@ -26,7 +26,7 @@ class CarModel(models.Model):
 
     # Create a toString method for object string representation
     def __str__(self):
-        return self.year + " " + self.make + " "+ self.name + " " + self.carType
+        return str(self.year) + " " + str(self.make.name) + " "+ self.name + " " + self.carType
 
 class CarDealer:
 
